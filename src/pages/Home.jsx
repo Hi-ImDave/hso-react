@@ -2,9 +2,9 @@ import ApodResults from '../components/apod/ApodResults'
 
 const Home = () => {
   return (
-    <>
-      <ApodResults loadKey='homepage' title='APOD Search' />
-    </>
+    <div className='container justify-center mx-auto'>
+      <ApodResults title='APOD Search' />
+    </div>
   )
 }
 

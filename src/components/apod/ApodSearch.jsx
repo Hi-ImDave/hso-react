@@ -29,21 +29,14 @@ const ApodSearch = () => {
   }
 
   return (
-    <div className='hero min-h-screen min-w-screen '>
-      <div className='hero-content flex-col lg:flex-row-reverse'>
+    <div className='hero min-h-screen w-screen'>
+      <div className='hero-content justify-center  flex-col lg:flex-row-reverse'>
         {Object.keys(image).length > 0 && (
-          <div className='card max-h-screen  shadow-xl'>
-            <figure>
-              <img
-                className='max-w-full max-h-screen  shadow-2xl'
-                src={image.hdurl}
-                alt='Album'
-              />
-            </figure>
-            <label htmlFor='my-modal' className='btn btn-ghost modal-button'>
-              {image.title}
-            </label>
-          </div>
+          <img
+            className='max-w-full max-h-max  shadow-2xl'
+            src={image.hdurl}
+            alt='Album'
+          />
         )}
         <div className='card flex-shrink-0 w-full max-w-sm shadow-2xl '>
           <form className='card-body' onSubmit={handleSubmit}>
@@ -70,19 +63,6 @@ const ApodSearch = () => {
               {image.title || 'Choose a date to view an image'}
             </h1>
             <p className='py-6 px-6'>{image.explanation}</p>
-          </div>
-        </div>
-      </div>
-
-      <input type='checkbox' id='my-modal' className='modal-toggle' />
-      <div className='modal'>
-        <div className='modal-box'>
-          <h3 className='font-bold text-lg'>{image.title}</h3>
-          <p className='py-4'>{image.explanation}</p>
-          <div className='modal-action'>
-            <label htmlFor='my-modal' className='btn'>
-              Close
-            </label>
           </div>
         </div>
       </div>

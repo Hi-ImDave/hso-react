@@ -4,9 +4,9 @@ import ApodSearch from '../components/apod/ApodSearch'
 
 const Apod = () => {
   return (
-    <div>
+    <>
       <ApodSearch />
-    </div>
+    </>
   )
 }
 
