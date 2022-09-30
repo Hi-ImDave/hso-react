@@ -1,10 +1,11 @@
 import React from 'react'
-import ApodResults from '../components/apod/ApodResults'
+// import ApodResults from '../components/apod/ApodResults'
+import ApodSearch from '../components/apod/ApodSearch'
 
 const Apod = () => {
   return (
     <div>
-      <ApodResults loadKey='apodpage' paramType='date' param='2022-07-01' />
+      <ApodSearch />
     </div>
   )
 }

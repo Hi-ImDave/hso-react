@@ -17,6 +17,7 @@ HTML, CSS - Tailwind/DaisyUI, JavaScript - JSX, React
 
 ## Optimizations:
 
-params are currently hardcoded to count in apod fetch request
+need to move fetch into context files, bring context into search and results components.
+apod card only visible when something in state
 
 ## Lessons Learned:
