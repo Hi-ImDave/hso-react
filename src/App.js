@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <main
         className={
-          location.pathname === '/'
+          location.pathname !== '/apod'
             ? `container mx-auto px-3 pb-12`
             : 'container px-3 pb-12'
         }

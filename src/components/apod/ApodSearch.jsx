@@ -30,16 +30,16 @@ const ApodSearch = () => {
 
   return (
     <div className='hero min-h-screen w-screen'>
-      <div className='hero-content justify-center  flex-col lg:flex-row-reverse'>
+      <div className='hero-content  justify-center  flex-col lg:flex-row-reverse'>
         {Object.keys(image).length > 0 && (
           <img
             className='max-w-full max-h-max  shadow-2xl'
             src={image.hdurl}
-            alt='Album'
+            alt='No Image for this date'
           />
         )}
-        <div className='card flex-shrink-0 w-full max-w-sm shadow-2xl '>
-          <form className='card-body' onSubmit={handleSubmit}>
+        <div className='card flex-shrink-0 w-full max-w-sm shadow-2xl  '>
+          <form className='card-body ' onSubmit={handleSubmit}>
             <div className='form-control'>
               <div className='relative'>
                 <input
