@@ -3,7 +3,7 @@ import ApodResults from '../components/apod/ApodResults'
 const Home = () => {
   return (
     <div className='container justify-center mx-auto'>
-      <ApodResults title='APOD Search' />
+      <ApodResults title='Go To APOD Search' />
     </div>
   )
 }
